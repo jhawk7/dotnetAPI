@@ -1,0 +1,7 @@
+services:
+  dotnetapi:
+    container_name: dotnetapi
+    image: jhawk7/dotnetapi:latest
+    build: .
+    ports:
+      - 5256:5256
