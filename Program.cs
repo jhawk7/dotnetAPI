@@ -65,6 +65,11 @@ app.MapGet("/health", () =>
     return "OK";
 }).WithName("Healthcheck");
 
+app.MapGet("/old", () =>
+{
+    return "this is new";
+}).WithName("NewEndpoint");
+
 app.MapControllers();
 
 app.Run();
