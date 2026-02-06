@@ -67,7 +67,7 @@ app.MapGet("/health", () =>
 
 app.MapGet("/old", () =>
 {
-    return "this is new";
+    return "this is old";
 }).WithName("NewEndpoint");
 
 app.MapControllers();
