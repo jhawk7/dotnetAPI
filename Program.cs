@@ -60,6 +60,11 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapGet("/health", () =>
+{
+    return "OK";
+}).WithName("Healthcheck");
+
 app.MapControllers();
 
 app.Run();
